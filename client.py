@@ -9,9 +9,8 @@ load_dotenv()
 # Configuración
 import os
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-assistant_id = os.getenv("asst_b3utMhxT6go7pIXB4s55uFpW")
-backend_url = os.getenv("https://script.google.com/macros/s/AKfycbzGf9eb4pchk9c9k-5i-DBMxNXw8-Vo-iJq3QGJpKWwUs_fDiUwCF4NAY2EUXGjeYM_/exec")
-
+assistant_id = os.getenv("ASSISTANT_ID")  # ✅ Correcto
+backend_url = os.getenv("GOOGLE_BACKEND_URL")  # ✅ Correcto
 # Función para iniciar una conversación
 def iniciar_conversacion():
     thread = openai.beta.threads.create()
